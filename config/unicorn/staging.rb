@@ -1,4 +1,4 @@
- app_path = "/var/www/html/prototype/current"
+ app_path = "/var/www/html/deploy_capistrano/current"
 working_directory app_path
 
 pid "#{app_path}/tmp/pids/unicorn.pid"

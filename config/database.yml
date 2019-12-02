@@ -4,9 +4,9 @@ default: &default
   reconnect: true
   encoding: utf8mb4
   pool: 20
-  host: "172.17.0.2"
-  username: "root"
-  password: "toor"
+  host: '172.17.0.3'
+  username: 'root'
+  password: 'abc123'
   port: <%= ENV.fetch("DATABASE_PORT") { 3306 } %>
 
 development:
@@ -21,10 +21,8 @@ staging:
   <<: *default
   database: demo_staging
   username: root
-  password: toor
 
 production:
   <<: *default
   database: demo_production
   username: root
-  password: toor
